@@ -24,7 +24,6 @@ const images = [
     alt: "Lighthouse Coast Sea",
   },
 ];
-const gallery = document.querySelector(".gallery");
 
 const items = images.map((obj) => {
   const item = document.createElement("li");
@@ -37,4 +36,4 @@ const items = images.map((obj) => {
   return item;
 });
 
-gallery.append(...items);
+document.querySelector(".gallery").append(...items);
